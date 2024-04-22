@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+
+            <div id="nav">
+                <img src="img/logo.png" id="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skill">Skills & Qualification</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis-vertical nav" onclick="openmenu()"></i>
+            </div>
+            
+        <div id="content">
+            <h1 class="fade-in">Hi I am <span>Anupam</span><br> from Kolkata</h1>
+            <h4>I <i><span class="auto-type">Innovative Code</span></i></h1>
+
+        </div>
+
+        <div id="immage-container">
+
+                <img id="image" src="img/home.png">
+
+        </div>
+
+    </div>
+
+<!-- about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col1">
+                    <img src="img/about.jpg" alt="">
+                </div>
+                <div class="about_col2">
+                    <h1 class="sub_title">About <span id="color">Me</span></h1>
+                    <p>I am Anupam Chakraborty, currently pursuing my BCA from IHRM College in Kolkata, affiliated by MAKAUT, with an expected graduation in June 2025. I aspire to work as a web developer, starting as an intern, so I can contribute my skills and knowledge to your organization, where I can learn, adapt, and thrive in a dynamic environment.</p>
+                    <center><a href="#" class="btn">See More</a></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills section -->
+
+    <div class="skills" id="skill">
+
+        <div class="container">
+
+            <div class="image">
+                <img src="">
+            </div>
+
+            <div class="tab-titela">
+                <p class="tab-links active-link" onclick="opentab('skills')"><i class="fa-solid fa-code"></i>  Skills</p>
+                <p class="tab-links" onclick="opentab('experience')"><i class="fa-regular fa-star"></i>  Experience</p>
+                <p class="tab-links" onclick="opentab('education')"><i class="fa-solid fa-graduation-cap"></i>  Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+                <ul>
+                    <li><span><i class="fa-brands fa-html5"></i></span>  HTML 5</li>
+                    <li><span class="bar"><span class="html"></span></span></li>
+                    <li><span><i class="fa-brands fa-css3-alt"></i></span>  CSS 3</li>
+                    <li><span class="bar"><span class="css"></span></span></li>
+                    <li><span><i class="fa-brands fa-js"></i></span>  JAVA SCRIPT</li>
+                    <li><span class="bar"><span class="js"></span></span></li>
+                    <li><span><i class="fa-brands fa-bootstrap"></i></span>  BOOTSTRAP</li>
+                    <li><span class="bar"><span class="bootstarp"></span></span></li>
+                </ul>
+            </div>
+            <div class="tab-content" id="experience">
+                <div class="row1">
+                <div class="box">
+                    <h4></h4>
+                    <h3><i class="fa-solid fa-star"></i>  Fresher</h3>
+                    <p>
+                        
+                    As a fresher entering the IT industry, I'm stepping into a world brimming with opportunities and challenges. With a curious mind and a thirst for knowledge, I'm eager to immerse myself in this dynamic field. I see this moment as the beginning of an exciting journey where I'll not only gain valuable experience but also contribute fresh perspectives and ideas. As I embark on this path, I'm ready to learn, grow, and carve out my place in the ever-evolving landscape of technology.
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="tab-content" id="education">
+                <div class="row1">
+                <div class="box">
+                    <h4>2019 - 2022</h2>
+                    <h3><i class="fa-solid fa-school"></i> High School</h3>
+                    <p>
+                        Passed 10th:  From RAIBAGHINI HIGH SCHOOL(H.S)<br><br>
+                        Passed 10+2 th:  From RAIBAGHINI HIGH SCHOOL(H.S)
+                    </p>
+                </div>
+                <div class="box">
+                    <h4>2022- 2025</h2>
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Bachelor's Degree</h3>
+                    <p>
+                        I am currently pursuing my BCA from (IHRM), affiliated with MAKAUT. Through this program, I am gaining valuable insights into programming, database management, and Web development, preparing me for a successful career in technology.
+                        
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub_title">My <span id="color">work</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/p1.jpg">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p> the app vvggeynsn</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/p2.jpg">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p> the app vvggeynsn</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/p3.jpg">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p> the app vvggeynsn</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <center><a href="#" class="btn">See More</a></center>
+    </div>
+</div>
+<!--------- vlogs-------- -->
+
+<!-- --------contact------- -->
+<div id="contact">
+    <div class="container">
+        <div class="con-row">
+            <div class="contact-left">
+            <h1 class="sub_title">Contact <span id="color">me</span></h1>
+            <p> <i class="fa-solid fa-paper-plane"></i>chakrabortyanupam123@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 98837 37889</p>
+            <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="img/mycv.pdf" download class="btn btn2">Download cv</a>
+        </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="mail" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="copyright">
+        <p>Copyright Anupam. All Rights Reserved | © 2024 <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<!-- -------script-------- -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+   <script src="myjs.js"></script> 
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhYrYYxU5gVpV8C7N_g1GbP8FRfjEkyyhl53k4mjaZEPT5QtpJq3zqKGQTtV86ylTFYA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.querySelector("#msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully!"
+            setTimeout(() => {
+                msg.innerHTML=""
+            }, 1000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
