@@ -345,22 +345,22 @@ body{
     border-radius: 10px;
 }
 .bootstarp{
-    width: 10%;
+    width: 50%;
     animation: bootstrap 3s;
     border-radius: 10px;
 }
 .react{
-    width: 10%;
+    width: 60%;
     animation: react 3s;
     border-radius: 10px;
 }
 .php{
-    width: 10%;
+    width: 60%;
     animation: php 3s;
     border-radius: 10px;
 }
 .sql{
-    width: 10%;
+    width: 50%;
     animation: sql 3s;
     border-radius: 10px;
 }
@@ -393,7 +393,7 @@ body{
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 70%;
     }
 }
 @keyframes react{
@@ -401,7 +401,7 @@ body{
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -410,7 +410,7 @@ body{
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 60%;
     }
 }
 
