@@ -167,22 +167,22 @@
     <div class="container">
         <div class="con-row">
             <div class="contact-left">
-            <h1 class="sub_title">Contact <span id="color">me</span></h1>
-            <p> <i class="fa-solid fa-paper-plane"></i>chakrabortyanupam123@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+91 98837 37889</p>
-            <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <h1 class="sub_title">Contact <span id="color">me</span></h1>
+                <p><i class="fa-solid fa-paper-plane" aria-label="Email"></i> chakrabortyanupam123@gmail.com</p>
+                <p><i class="fa-solid fa-phone" aria-label="Phone"></i> +91 98837 37889</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="img/mycv.pdf" download class="btn btn2">Download CV</a>
             </div>
-            <a href="img/mycv.pdf" download class="btn btn2">Download cv</a>
-        </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="Email" name="mail" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <input type="text" name="Name" placeholder="Your Name" required aria-label="Your Name">
+                    <input type="email" name="mail" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message" aria-label="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
@@ -191,33 +191,32 @@
     </div>
     <hr>
     <div class="copyright">
-        <p>Copyright Anupam. All Rights Reserved | © 2024 <i class="fa-solid fa-heart"></i></p>
+        <p>Copyright Anupam. All Rights Reserved | © 2024 <i class="fa-solid fa-heart" aria-label="Love"></i></p>
     </div>
 </div>
 
-
 <!-- -------script-------- -->
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
-   <script src="myjs.js"></script> 
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="myjs.js"></script>
 
-  
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhYrYYxU5gVpV8C7N_g1GbP8FRfjEkyyhl53k4mjaZEPT5QtpJq3zqKGQTtV86ylTFYA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg=document.querySelector("#msg")
-  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyhYrYYxU5gVpV8C7N_g1GbP8FRfjEkyyhl53k4mjaZEPT5QtpJq3zqKGQTtV86ylTFYA/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.querySelector("#msg");
+
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML= "Message sent successfully!"
-            setTimeout(() => {
-                msg.innerHTML=""
-            }, 1000);
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!";
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 3000); // Adjusted to 3 seconds for better user visibility
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+
 </body>
 </html>
