@@ -349,6 +349,21 @@ body{
     animation: bootstrap 3s;
     border-radius: 10px;
 }
+.react{
+    width: 10%;
+    animation: react 3s;
+    border-radius: 10px;
+}
+.php{
+    width: 10%;
+    animation: php 3s;
+    border-radius: 10px;
+}
+.sql{
+    width: 10%;
+    animation: sql 3s;
+    border-radius: 10px;
+}
 @keyframes html{
     0%{
         width: 0%;
@@ -381,6 +396,33 @@ body{
         width: 50%;
     }
 }
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
 
 /* ------portfolio----- */
 #portfolio{
