@@ -211,7 +211,7 @@
                 msg.innerHTML = "Message sent successfully!";
                 setTimeout(() => {
                     msg.innerHTML = "";
-                }, 3000); // Adjusted to 3 seconds for better user visibility
+                }, 1000); // Adjusted to 3 seconds for better user visibility
                 form.reset();
             })
             .catch(error => console.error('Error!', error.message));
